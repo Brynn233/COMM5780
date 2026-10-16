@@ -39,20 +39,7 @@ header {
     text-decoration: none;
 }
 
-.nav-links {
-    display: flex;
-    gap: 25px;
-}
 
-.nav-links a {
-    color: #444444;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.nav-links a:hover {
-    color: #b16f52;
-}
 
 /* 3. Main welcome area */
 .hero {
@@ -61,12 +48,6 @@ header {
     background-color: #e9eee8;
 }
 
-.eyebrow {
-    color: #8b6d56;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
 
 .hero h1 {
     color: #314c45;
@@ -81,18 +62,7 @@ header {
     color: #555e58;
 }
 
-.button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #314c45;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-}
 
-.button:hover {
-    background-color: #49685e;
-}
 
 /* 4. Content sections */
 .section {
@@ -107,9 +77,7 @@ header {
     margin-top: 8px;
 }
 
-.section > p:not(.eyebrow) {
-    max-width: 700px;
-}
+
 
 /* 5. Project cards */
 .project-grid {
@@ -127,14 +95,8 @@ header {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-}
 
-.project-card h3 {
-    color: #314c45;
-}
+
 
 /* 6. Contact section */
 .contact {
@@ -143,10 +105,7 @@ header {
     max-width: 100%;
 }
 
-.contact a {
-    color: #314c45;
-    font-weight: bold;
-}
+
 
 /* 7. Footer */
 footer {
