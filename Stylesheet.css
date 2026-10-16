@@ -1,40 +1,183 @@
+
+
+/* 1. Basic settings */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-color: gray;
-background: white;
-font-family: Verdana,Arial,Helvetica,sans-serif;
-margin-left: 10%;
-margin-right: 10%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    background-color: #f8f7f4;
+    line-height: 1.7;
 }
-h1 {
-color: #457926;
-font-family: Georgia,"Times New Roman",Times,serif;
-font-size: 2em;
-text-transform: uppercase;
-margin-left: -8%;
+
+/* 2. Navigation bar */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8e5df;
 }
-h2 {
-color: #457926;
-font-family: Georgia,"Times New Roman",Times,serif;
-font-size: 1.7em;
-border: solid;
-margin-left: -4%;
-margin-top: 2em;
-margin-bottom: 2em;
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-p {
-font-size: 1.2em;
-text-indent: 2em;
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #314c45;
+    text-decoration: none;
 }
-blockquote {
-font-size: 1em;
-font-style: italic;
-color: black;
-background: red;
+
+.nav-links {
+    display: flex;
+    gap: 25px;
 }
-.first-line {
-font-weight: bold;
+
+.nav-links a {
+    color: #444444;
+    text-decoration: none;
+    font-size: 14px;
 }
-#first {
-font-size: 1.4em;
-color: blue;
+
+.nav-links a:hover {
+    color: #b16f52;
 }
+
+/* 3. Main welcome area */
+.hero {
+    text-align: center;
+    padding: 110px 24px;
+    background-color: #e9eee8;
+}
+
+.eyebrow {
+    color: #8b6d56;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    color: #314c45;
+    font-size: 54px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero-text {
+    max-width: 560px;
+    margin: 0 auto 30px;
+    color: #555e58;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #314c45;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #49685e;
+}
+
+/* 4. Content sections */
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 75px 24px;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #314c45;
+    margin-top: 8px;
+}
+
+.section > p:not(.eyebrow) {
+    max-width: 700px;
+}
+
+/* 5. Project cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e8e5df;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.project-card h3 {
+    color: #314c45;
+}
+
+/* 6. Contact section */
+.contact {
+    text-align: center;
+    background-color: #e9eee8;
+    max-width: 100%;
+}
+
+.contact a {
+    color: #314c45;
+    font-weight: bold;
+}
+
+/* 7. Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #314c45;
+    color: white;
+    font-size: 13px;
+}
+
+/* 8. Mobile layout */
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 75px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
