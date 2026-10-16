@@ -62,7 +62,18 @@ header {
     color: #555e58;
 }
 
+button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #314c45;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
 
+.button:hover {
+    background-color: #49685e;
+}
 
 /* 4. Content sections */
 .section {
