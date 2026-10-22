@@ -112,6 +112,17 @@ button {
     margin-bottom: 18px;
 }
 
+.project-card h4 {
+    color: #456B5D;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #DCE5DF;
+}
+
+
 .project-card p {
     margin-bottom: 20px;
 }
